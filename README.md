@@ -10,3 +10,5 @@ http://mdecourse.github.io/2018fall/
 cpgx 網站: https://cpgx.kmol.info
 
 遠端連結:https://mdecp2018.github.io/site-s40723245/content/index.html
+
+個人網誌:https://mdecp2018.github.io/site-s40723210/blog/index.html
