@@ -1,5 +1,5 @@
 倉儲:https://mdecp2018.github.io/site-s40723245/
 
-網誌:https://mdecp2018.github.io/site-s40723210/blog/
+網誌:https://mdecp2018.github.io/site-s40723245/blog/
 
-簡報:https://mdecp2018.github.io/site-s40723210/reveal/
+簡報:https://mdecp2018.github.io/site-s40723245/reveal/
