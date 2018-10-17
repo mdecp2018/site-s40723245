@@ -86,7 +86,7 @@
 import os
 
 os.system("pelican markdown -o blog -s publishconf.py")
-g.es("admin pelican Github 執行完畢")
+g.es("admin pelican Github 近端執行完畢")
 
 
 </t>
