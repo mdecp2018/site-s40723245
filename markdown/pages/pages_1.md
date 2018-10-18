@@ -1,6 +1,6 @@
 Title: About
 
-##2018 Fall 分組網誌
+##s40723245 分組網誌
 
 課程倉儲: <a href="https://github.com/mdecourse/2018fall">https://github.com/mdecourse/2018fall</a>
 
