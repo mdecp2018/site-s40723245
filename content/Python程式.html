@@ -1,0 +1,139 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>計算機程式教材</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+
+<script src="./../static/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+</script>
+
+</head><header><h1>2018 Fall  s40723245網站</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a><li><a href='常用的網站.html'>常用的網站</a></li></ul><li><a href='程式語言.html'>程式語言</a><ul><li><a href='git基本程式.html'>git基本程式</a><li><a href='Python程式.html'>Python程式</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='week4.html'>week4</a><li><a href='week5.html'>week5</a><li><a href='week6.html'>week6</a><li><a href='week7.html'>week7</a></li></ul><li><a href='個人練習.html'>個人練習</a><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>git基本程式 << <a href='git基本程式.html'>Previous</a> <a href='組員操作影片.html'>Next</a> >> 組員操作影片<br /><h1>Python程式</h1>
+<p><span style="color: #ff0000;">def</span> ：定義</p>
+<p><span style="color: #ff0000;">len <span style="color: #808080;">：</span></span>(全名lenght) 列出<span style="color: #ff0000;">有幾個</span>字串</p>
+<p><span style="color: #ff0000;">input <span style="color: #808080;">：</span></span>經由處理將數字變成字串</p>
+<p><span style="color: #ff0000;"># <span style="color: #808080;">：</span></span>用來<span style="color: #ff0000;">註解</span>，在其可打文字說明且不影響程式進行</p>
+<p><span style="color: #ff0000;">"""</span>Steins Gate<span style="color: #ff0000;">"""  <span style="color: #808080;">：前後加3個雙引號或單引號可將2個單字<span style="color: #ff0000;">換行</span></span></span></p>
+<p>Strins <span style="color: #ff0000;">/n</span> Gate ：同樣有<span style="color: #ff0000;">換行</span>的作用</p>
+<p><strong><span style="color: #000000;">Python專業術語說明</span></strong></p>
+<p><span style="color: #000000;"></span>data type 資料型態(分類)</p>
+<p>浮點數(小數)</p>
+<p>字串：任意的文字內容，前後需加<span style="color: #ff0000;">雙引號</span>或<span style="color: #ff0000;">單引號</span></p>
+<p>布林值：表達正確(Ture)或錯誤(False)，<span style="color: #ff0000;">字首大寫</span></p>
+<p>可變列表（List）：有順序、可變動的資料集合</p>
+<p>固定列表(Tuple)：有順序、不可變動的資料集合</p>
+<p>字典：鍵值對(key-Value Pair)的集合</p>
+<p>集合：無順序的資料集合</p>
+<p>變數(Bariable)：可用來存放資料的自訂名稱</p>
+<p style="text-align: left;">-----------------------------------------------拉線-------------------------------------------------------</p>
+<p style="text-align: center;"><strong>↓↓~以下是Python程式的範例~↓↓</strong></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 資料: 程式的基本單位
+# 數字
+3456
+3.5
+# 字串
+"啊哈哈哈"
+"Steins Gate"
+# 布林值
+True
+False
+# 有順序、可動的列表 List
+[3,4,5]
+["steins","Gate"]
+# 有順序、不可動的列表 Tuple
+(3,4,5)
+("Steins","Gate")
+# 集合
+{3,4,5}
+{"Steins","Gate"}
+# 字典 Dictionary
+{"Steins Gate":"命運石之門","data":"資料"}
+# 變數: 用來儲存資料的自訂名稱
+# 變數名稱=資料
+x=3
+# print(資料)
+print(x)
+x=True # 取代舊的資料
+print(x)
+x="Steins Gate"
+print(x)
+x={3,4,6} # 集合 Set
+print(x)</pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 數字運算
+x=3*6
+print(x)
+x+=1 #x=x+1 #將變數中的數字 +1
+print(x)
+# 字串運算
+# 字串會對內部的字元編號(索引), 從0開始算起
+s="Steins"
+print(s[1:4])</pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 有序可變動列表 List
+grades=[37,56,61,80,87]
+grades[1:4]=[] # 連續刪除列表中從編號 1 到 編號 4(不包括)的資料
+grades=grades+[13,15]
+length=len(grades) # 取得列表的長度len(列表資料)
+print(length)
+grades[0]=45 #把 45 放到列表中的第一個位置
+print(grades)
+# 有序不可變動列表 Tuple</pre>
+<br />git基本程式 << <a href='git基本程式.html'>Previous</a> <a href='組員操作影片.html'>Next</a> >> 組員操作影片</section></div></body></html>
