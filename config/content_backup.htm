@@ -20,7 +20,7 @@
 <p>程式語言是人類和機器溝通的橋樑，透過程式語言，人們可以更精確地對電腦下達指令，達到目標。</p>
 <h2>git基本程式</h2>
 <p><span><span style="color: #ff0000;">git clone</span>  </span><span style="color: #000000;">將遠端檔案下載至近端</span></p>
-<p><span><span style="color: #ff0000;">git commit -m "initial add"</span>  </span><span style="color: #000000;">提交近端檔案並命名為""內的字</span></p>
+<p><span><span style="color: #ff0000;">git commit -m "initial add"</span>  </span><span style="color: #000000;">提交近端檔案並命名為initial add</span></p>
 <p><span><span style="color: #ff0000;">git config --global user_email 電子信箱</span>   </span><span style="color: #000000;">第一次上傳檔案需要登入，儲存至home</span></p>
 <p><span><span style="color: #ff0000;">git config --global user_name s+學號</span>  </span><span style="color: #000000;">同上(但非必須)</span></p>
 <p><span><span style="color: #ff0000;">git push</span> </span><span style="color: #000000;">將近端檔案推上遠端</span></p>
@@ -29,10 +29,11 @@
 <p><span><span style="color: #ff0000;">git checkout gh-pages</span>  </span><span style="color: #000000;">導出gh-page</span></p>
 <p><span style="color: #ff0000;">git pull </span><span style="color: #000000;">近端遠端同步</span></p>
 <p><span style="color: #000000;"><span style="color: #ff0000;">git status</span> 查詢有更動的資料</span></p>
-<p><span><span style="color: #ff0000;">mkdir</span> </span><span style="color: #000000;"><span style="color: #ff0000;">名稱</span> 建立目錄</span></p>
+<p><span><span style="color: #ff0000;">mkdir</span> <span style="color: #ff0000;">test</span> </span><span style="color: #000000;"> 在目錄裡建立資料夾並命名為test</span></p>
 <p><span style="color: #ff0000;">cls <span style="color: #000000;">清理終端機的畫面</span></span></p>
-<p><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #000000;"></span></span></span></p>
-<p><span style="color: #ff0000;"><span style="color: #000000;"></span></span></p>
+<p><span style="color: #ff0000;">git branch dev</span> 新增branch叫做dev</p>
+<p><span style="color: #ff0000;">git log</span> 顯示所有的版本</p>
+<p><span style="color: #ff0000;">git log --oneline --graph --all</span> 只顯示最近更新的全部圖檔</p>
 <h2>Python程式</h2>
 <p><span style="color: #ff0000;">def</span> ：定義</p>
 <p><span style="color: #ff0000;">len </span>：(全名lenght) 列出<span style="color: #ff0000;">有幾個</span>字串</p>
@@ -104,19 +105,22 @@ print(grades)
 # 有序不可變動列表 Tuple</pre>
 <h1>組員操作影片</h1>
 <p>每週各分組組員必須將參與分組協同過程之電腦操作流程錄成影片後, 上傳至各自的 Youtube 帳號區, 並嵌入各分組網站頁面中.</p>
-<h2>Week1</h2>
-<p><span>國立虎尾科技大學機械設計工程系計算機程式 - 一乙第八週第三部分, 說明如何利用 Eric6 IDE 建立所需的 calculator 計算機程式對話表單. 過程中主要學習如何啟動 Eric6, 如何建立 Eric6 專案, 如何切換 Sources tab 與 Form tab, 如何在進入 Qt Designer 後利用格點布局, 建立按鈕與 Line Edit 部件.</span></p>
-<p><iframe allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/g4ksXq7sQ4M" width="560"></iframe></p>
-<h2>week2</h2>
+<h2>week1</h2>
 <p><strong>開啟近端網站教學</strong></p>
 <p>第一週主要是教我們python的基本操作，用可攜式的p37程式進行近端上傳到遠端的更新作業，<span style="color: #ff0000;">點開p37進入start.bat</span>，然後在指令頁面先打隨身碟或電腦裡的槽，例:在c槽打"c:"、在d槽打"d:"，(以下用c槽舉例)，打完<span style="color: #ff0000;">c:</span>後下一行會出現隨身碟裡面的p37位置，這時候要先回去c槽最前面的目錄，打<span style="color: #ff0000;">cd \<span style="color: #000000;">就能回到最前面的目錄。在隨身碟新增資料夾，資料夾名稱可以自取，假設將資料夾命名為tmp，接下來的步驟要把自己的倉儲下載到近端，在指令頁面打git clone 網址，這樣tmp資料夾裡面就會有一份自己的倉儲檔案，再來就可以開啟自己的近端網站，點進倉儲檔案裡，然後在指令頁面打cd tmp/倉儲檔案名稱，下一行打python wsgi.py，這樣就能從瀏覽器進去個人的近端網站。</span></span></p>
 <p><span style="color: #ff0000;"></span>以下是影片教學</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ajxvogIqz0g?feature=youtu" width="560"></iframe></p>
-<h2>week3</h2>
+<p style="text-align: center;"><span>----------------------------------------------------拉線----------------------------------------------------</span></p>
+<p><span>國立虎尾科技大學機械設計工程系計算機程式 - 一乙第八週第三部分, 說明如何利用 Eric6 IDE 建立所需的 calculator 計算機程式對話表單. 過程中主要學習如何啟動 Eric6, 如何建立 Eric6 專案, 如何切換 Sources tab 與 Form tab, 如何在進入 Qt Designer 後利用格點布局, 建立按鈕與 Line Edit 部件.</span></p>
+<p><iframe allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/g4ksXq7sQ4M" width="560"></iframe></p>
+<h2>week2</h2>
 <p><strong>如何開啟ShareX</strong></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/mfbh0w4EvVM" width="560"></iframe></p>
 <p>ShareX用途說明</p>
 <p>ShareX這個程式可以快速地拍影片，將ShareX.exe檔打開之後，它會在下面的工具列裡面，所以把打開的視窗關掉也能開影片，(Start/stop)快速鍵：<span style="color: #ff0000;">Shift+Print Screen</span></p>
+<h2>week3</h2>
+<p></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/of9aydsj4K4" width="560"></iframe></p>
 <h2>week4</h2>
 <p>如何修改投影片標題&amp;新增投影片</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/bZMXXGb0N3Q" width="560"></iframe></p>
@@ -139,7 +143,10 @@ print("Python keywords: ", keyword.kwlist)
 print("Python keywords: ", len(keyword.kwlist))
 </pre>
 <h2>week6</h2>
+<p>更新flaskapp</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/XvwItcC7viE?feature=youtu" width="560"></iframe></p>
 <h2>week7</h2>
+<h2>week8</h2>
 <h1>個人練習</h1>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">x="這就是"
 print(x) #把x印出
