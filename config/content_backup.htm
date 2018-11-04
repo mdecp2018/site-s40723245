@@ -21,8 +21,8 @@
 <h2>git基本程式</h2>
 <p><span><span style="color: #ff0000;">git clone</span>  </span><span style="color: #000000;">將遠端檔案下載至近端</span></p>
 <p><span><span style="color: #ff0000;">git commit -m "initial add"</span>  </span><span style="color: #000000;">提交近端檔案並命名為initial add</span></p>
-<p><span><span style="color: #ff0000;">git config --global user_email 電子信箱</span>   </span><span style="color: #000000;">第一次上傳檔案需要登入，儲存至home</span></p>
-<p><span><span style="color: #ff0000;">git config --global user_name s+學號</span>  </span><span style="color: #000000;">同上(但非必須)</span></p>
+<p><span><span style="color: #ff0000;">git config --global user.email "電子信箱"</span>   </span><span style="color: #000000;">第一次上傳檔案需要登入，儲存至home</span></p>
+<p><span><span style="color: #ff0000;">git config --global user.name "s+學號"</span>  </span><span style="color: #000000;">同上(但非必須)</span></p>
 <p><span><span style="color: #ff0000;">git push</span> </span><span style="color: #000000;">將近端檔案推上遠端</span></p>
 <p><span><span style="color: #ff0000;">dir</span> </span><span style="color: #000000;">顯示目錄的資料夾</span></p>
 <p><span><span style="color: #ff0000;">python wsgi.py</span> </span><span style="color: #000000;">動態擷取系統(打開近端網站必須)</span></p>
@@ -33,8 +33,7 @@
 <p><span style="color: #ff0000;">cls <span style="color: #000000;">清理終端機的畫面</span></span></p>
 <p><span style="color: #ff0000;">git branch dev</span> 新增branch叫做dev</p>
 <p><span style="color: #ff0000;">git log</span> 顯示所有的版本</p>
-<p><span style="color: #ff0000;">git log --oneline --graph --all</span> 只顯示最近更新的全部圖檔</p>
-<h2>Python程式</h2>
+<p><span style="color: #ff0000;">git log --oneline --graph --all</span> 用一行顯示有更新過的全部圖檔紀錄</p><h2>Python程式</h2>
 <p><span style="color: #ff0000;">def</span> ：定義</p>
 <p><span style="color: #ff0000;">len </span>：(全名lenght) 列出<span style="color: #ff0000;">有幾個</span>字串</p>
 <p><span style="color: #ff0000;">input </span>：經由處理將數字變成字串</p>
@@ -119,7 +118,7 @@ print(grades)
 <p>ShareX用途說明</p>
 <p>ShareX這個程式可以快速地拍影片，將ShareX.exe檔打開之後，它會在下面的工具列裡面，所以把打開的視窗關掉也能開影片，(Start/stop)快速鍵：<span style="color: #ff0000;">Shift+Print Screen</span></p>
 <h2>week3</h2>
-<p></p>
+<p>這週的 git 基本操作練習是先在自己的隨身碟或電腦的槽裡先新增一個資料夾，在資料夾裡放入<span style="color: #ff0000;">.git</span>檔，然後把my program.txt檔存入。分別儲存3次並用<span style="color: #ff0000;">git add .</span> 和<span style="color: #ff0000;">git commit -m ""</span>，這樣就有3個儲存的紀錄點，可以用<span style="color: #ff0000;">git log</span> 看到所有的紀錄點，如果覺得儲存的東西太多，可以用<span style="color: #ff0000;">git log --oneline --graph --all</span> ，這樣就會只顯示出一行的代號紀錄點，可以看每一次上傳的東西。</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/of9aydsj4K4" width="560"></iframe></p>
 <h2>week4</h2>
 <p>如何修改投影片標題&amp;新增投影片</p>
@@ -146,8 +145,10 @@ print("Python keywords: ", len(keyword.kwlist))
 <p>更新flaskapp</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/XvwItcC7viE?feature=youtu" width="560"></iframe></p>
 <h2>week7</h2>
-<h2>week8</h2>
-<h1>個人練習</h1>
+<p>這週因為github網站出現了問題，改用fossil作為替代方案。</p>
+<p><span style="color: #ff0000;">fossil clone  網址 <span style="color: #000000;">和</span><span style="color: #000000;">git clone有相同的作用，把遠端的檔案拉到近端</span></span></p><h2>week8</h2>
+<p><yt-formatted-string class="style-scope ytd-video-primary-info-renderer">如何在gitlab新增gitlab和gitlab的同步倉儲</yt-formatted-string></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Cc8fPZzJIGQ" width="560"></iframe> <iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2vjyolSm2Ek" width="560"></iframe></p><h1>個人練習</h1>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">x="這就是"
 print(x) #把x印出
 y="命運石之門"
