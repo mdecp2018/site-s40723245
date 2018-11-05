@@ -2,7 +2,7 @@
   position: relative;
 }
 header{
-  background-image: url("https://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/7af40ad162d9f2d394984f59acec8a136227ccff.jpg");
+  background: #ccc;
   padding: 30px;
   color: #13baac;
 }
@@ -202,7 +202,7 @@ background-color: white;
 width: 195px;
 }
 body {
-	background-image: url("https://yottyanikadesuyo.files.wordpress.com/2015/12/e38194e6b3a8e69687e381afe38186e38195e3818ee381a7e38199e3818b-e58d81e7bebde38080ede68f90e4be9be7b5b5e38080bs.jpg");
+	background: #FFFFFF;
   margin-bottom: 120px;
   background-size:100%
 }
