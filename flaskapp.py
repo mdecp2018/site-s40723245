@@ -23,8 +23,6 @@ import sys
 #from bs4 import BeautifulSoup
 # 為了使用 bs4.element, 改為 import bs4
 import bs4
-# for ssavePage and savePage
-import shutil
 
 # get the current directory of the file
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
@@ -1670,15 +1668,13 @@ def saveConfig():
 
 @app.route('/savePage', methods=['POST'])
 def savePage():
-    """save all pages function"""
     page_content = request.form['page_content']
     # check if administrator
     if not isAdmin():
         return redirect("/login")
     if page_content is None:
         return error_log("no content to save!")
-    # 在插入新頁面資料前, 先複製 content.htm 一分到 content_backup.htm
-    shutil.copy2(config_dir + "content.htm", config_dir + "content_backup.htm")
+    # we need to check if page heading is duplicated
     file = open(config_dir + "content.htm", "w", encoding="utf-8")
     # in Windows client operator, to avoid textarea add extra \n
     page_content = page_content.replace("\n","")
@@ -1808,7 +1804,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-</head><header><h1>''' + site_title + '''</h1> \
+</head><header><h1><span style="color: #16a9ea;">''' + site_title + '''</span></h1> \
 <confmenu>
 <ul>
 <li><a href="/">Home</a></li>
@@ -1858,7 +1854,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-</head><header><h1>''' + site_title + '''</h1> \
+</head><header><h1><span style="color: #16a9ea;">''' + site_title + '''</span></h1> \
 <confmenu>
 <ul>
 <li><a href="/">Home</a></li>
@@ -1915,13 +1911,14 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-</head><header><h1>''' + site_title + '''</h1> \
+</head><header><h1><strong><span style="color: #16a9ea;">''' + site_title + '''</span></strong></h1> \
 <confmenu>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="sitemap.html">Site Map</a></li>
 <li><a href="./../reveal/index.html">reveal</a></li>
 <li><a href="./../blog/index.html">blog</a></li>
+<li><a href="./../music/index.html">music</a></li>
 '''
     outstring += '''
 </ul>
@@ -1982,8 +1979,6 @@ def ssavePage():
     page_content = page_content.replace("\n","")
     head, level, page = parse_content()
     original_head_title = head[int(page_order)]
-    # 在插入新頁面資料前, 先複製 content.htm 一分到 content_backup.htm
-    shutil.copy2(config_dir + "content.htm", config_dir + "content_backup.htm")
     file = open(config_dir + "content.htm", "w", encoding="utf-8")
     for index in range(len(head)):
         if index == int(page_order):
