@@ -1804,7 +1804,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-</head><header><h1><span style="color: #16a9ea;">''' + site_title + '''</span></h1> \
+</head><header><h1>''' + site_title + '''</h1> \
 <confmenu>
 <ul>
 <li><a href="/">Home</a></li>
@@ -1854,7 +1854,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-</head><header><h1><span style="color: #16a9ea;">''' + site_title + '''</span></h1> \
+</head><header><h1>''' + site_title + '''</h1> \
 <confmenu>
 <ul>
 <li><a href="/">Home</a></li>
@@ -1911,14 +1911,13 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-</head><header><h1><strong><span style="color: #16a9ea;">''' + site_title + '''</span></strong></h1> \
+</head><header><h1>''' + site_title + '''</h1> \
 <confmenu>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="sitemap.html">Site Map</a></li>
 <li><a href="./../reveal/index.html">reveal</a></li>
 <li><a href="./../blog/index.html">blog</a></li>
-<li><a href="./../music/index.html">music</a></li>
 '''
     outstring += '''
 </ul>
