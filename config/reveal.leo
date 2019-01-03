@@ -27,6 +27,57 @@
 <v t="leo.20181015235932.1"><vh>投影片1</vh>
 <v t="leo.20181015235932.2"><vh>封面投影片</vh></v>
 </v>
+<v t="leo.20190103144312.1"><vh>week1</vh>
+<v t="leo.20190103144312.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144320.1"><vh>week2</vh>
+<v t="leo.20190103144320.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144326.1"><vh>week3</vh>
+<v t="leo.20190103144326.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144332.1"><vh>week4</vh>
+<v t="leo.20190103144332.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144337.1"><vh>week5</vh>
+<v t="leo.20190103144337.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144344.1"><vh>week6</vh>
+<v t="leo.20190103144344.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144351.1"><vh>week7</vh>
+<v t="leo.20190103144351.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144358.1"><vh>week8</vh>
+<v t="leo.20190103144358.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144403.1"><vh>week9</vh>
+<v t="leo.20190103144403.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144409.1"><vh>week10</vh>
+<v t="leo.20190103144409.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144414.1"><vh>week11</vh>
+<v t="leo.20190103144414.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144420.1"><vh>week12</vh>
+<v t="leo.20190103144420.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144425.1"><vh>week13</vh>
+<v t="leo.20190103144425.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144430.1"><vh>week14</vh>
+<v t="leo.20190103144430.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144435.1"><vh>week15</vh>
+<v t="leo.20190103144435.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144441.1"><vh>week16</vh>
+<v t="leo.20190103144441.2"><vh>封面投影片</vh></v>
+</v>
+<v t="leo.20190103144252.1"><vh>week17</vh>
+<v t="leo.20190103144252.2"><vh>封面投影片</vh></v>
+</v>
 <v t="leo.20181017172445.1"><vh>ShareX影片</vh>
 <v t="leo.20181017172445.2"><vh>封面投影片</vh></v>
 </v>
@@ -357,6 +408,255 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20181017172445.2">ShareX開啟示範教學影片
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/mfbh0w4EvVM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20190103144252.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144252.2">## week17心得
+
+由於調課的關係，這週分成3天上課，
+這3天都是學長來教我們python的程式。
+學長講的話和舉例都滿清楚的。
+
+</t>
+<t tx="leo.20190103144312.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144312.2">## week1 心得
+
+第一次接觸到python這個程式，有很多地方都聽不懂。
+高職的時候多少有學點計算機概論，頂多只懂一些C語言的基本程式，
+看來得多用心在這上面了。
+</t>
+<t tx="leo.20190103144320.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144320.2">## week2心得
+
+這週是做git基本操作練習，熟悉這些git的基本指令，
+在將來如果有出現bug之類的問題，可以用來回復到上
+一個更新版本的地方。
+</t>
+<t tx="leo.20190103144326.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144326.2">## week3心得
+
+這週是中秋節放假。
+
+</t>
+<t tx="leo.20190103144332.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144332.2">## week4心得
+
+這週老師教我們用Leo-Editor做投影片和部落格，
+分別在reveal.leo和pelican.leo可以做更新。
+
+</t>
+<t tx="leo.20190103144337.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144337.2">## week5心得
+
+老師今天教python的基本程式，python程式有很多地方和C語言類似，
+例如像x+=1、x-=2，還有一些變數、布林值之類的。
+
+</t>
+<t tx="leo.20190103144344.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144344.2">## week6心得
+
+這禮拜是做flaskapp.py的更新，因為許多同學在更新
+自己的倉儲時出現了很多bug問題，所以老師直接在
+github對flaskapp.py做了一個除掉bug的更新檔。
+</t>
+<t tx="leo.20190103144351.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144351.2">## week7心得
+
+這週github網站發生了問題。
+
+</t>
+<t tx="leo.20190103144358.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144358.2">## week8心得
+
+今天老師教我們在gitlab做一個和github的同步的倉儲，
+除了在github之外也能在gitlab做備份儲存。
+
+</t>
+<t tx="leo.20190103144403.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144403.2">## week9心得
+
+這週要繳交個人倉儲及自評成績。
+</t>
+<t tx="leo.20190103144409.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144409.2">## week10心得
+
+這個禮拜學長教我們用cmd.exe打指令eric6開啟p37-18.11檔案內的eric6，可以用其中的模組去創造出一個新頁面。學長教我們用裡面的slider、porgress bar和button去做一個進度表的同步連動，我覺得頗有趣的。
+
+</t>
+<t tx="leo.20190103144414.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144414.2">## week11心得
+
+這禮拜老師教我們用heroku同步github倉儲，首先將heroku的系統下載至近端，主要目的是能做到在heroku雲端更新的時候，github倉儲也會一起自動更新。
+
+</t>
+<t tx="leo.20190103144420.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144420.2">## week12心得
+
+這禮拜要開始使用heroku雲端服務和github倉儲連結，由組長創出一個群組，然後再把其他組員拉進來。連結完之後，才發現在github裡只有組長有heroku的同步倉儲連結，組員則否。
+
+</t>
+<t tx="leo.20190103144425.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144425.2">## week13心得
+
+今天老師教我們kmolgame裡的一些程式是如何運轉的，一種是兔子顯示在html的絕對座標，另一種是一顆球在html上進行左右來回的運動，可以在程式裡更改速度及球的大小，此外球也可以換成其他png檔的圖片，我覺得很有趣。
+
+</t>
+<t tx="leo.20190103144430.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144430.2">## week14心得
+
+這禮拜做的是登入系統，登入失敗會出現錯誤訊息並回到登入頁面，在將來可以用在網頁登入的作業。
+
+</t>
+<t tx="leo.20190103144435.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144435.2">## week15心得
+
+這週我們要利用協同Markdown、pandoc與LaTeX編輯建立期末報告，
+檔案從bgx的report抓下來，用Leo-Editor編輯，全部的資料打完之後
+可以轉成一個統整的pdf檔。
+
+</t>
+<t tx="leo.20190103144441.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103144441.2">## week16心得
+
+期末將近，我們的小遊戲雛形已經有初步的完成，
+現在我們主要要先做好分組報告及拍期末課程學習報告
+的影片。
+
 </t>
 </tnodes>
 </leo_file>
