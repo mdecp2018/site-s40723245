@@ -69,4 +69,228 @@ $(function(){
 </confmenu></header>
 <div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a><li><a href='常用的網站.html'>常用的網站</a></li></ul><li><a href='程式語言.html'>程式語言</a><ul><li><a href='git基本程式.html'>git基本程式</a><li><a href='Python程式.html'>Python程式</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a></li></ul><li><a href='每周進度(期中).html'>每周進度(期中)</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='week4.html'>week4</a><li><a href='week5.html'>week5</a><li><a href='week6.html'>week6</a><li><a href='week7.html'>week7</a><li><a href='week8.html'>week8</a><li><a href='week9.html'>week9</a></li></ul><li><a href='每周進度(期末).html'>每周進度(期末)</a><ul><li><a href='week10.html'>week10</a><li><a href='week11.html'>week11</a><li><a href='week12.html'>week12</a><li><a href='week13.html'>week13</a><li><a href='week14.html'>week14</a><li><a href='week15.html'>week15</a><li><a href='week16.html'>week16</a><li><a href='week17.html'>week17</a><li><a href='week18.html'>week18</a></li></ul><li><a href='個人練習.html'>個人練習</a><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>簡介 << <a href='簡介.html'>Previous</a> <a href='reveal 投影片.html'>Next</a> >> reveal 投影片<br /><h1>CMSimfly 網站</h1>
 <p>各組必須自行更改 Config 中的網站標題, 且每次完成近端動態網頁編輯後, 以 generate_pages 按鈕, 將動態網頁資料轉為靜態網頁資料, 之後再新增、提交並推送到遠端倉儲.</p>
+</ol>
+<!-- 啟動 Brython 時, 設定 pythonpath 為 ./../static/, 並將共用 .py 放入, 可以在隨後的程式中導入使用 -->
+<p><!-- 導入 brython --></p>
+<p>
+<script src="./../static/brython.js" type="text/javascript"></script>
+<script src="./../static/brython_stdlib.js" type="text/javascript"></script>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../static/']});
+}
+</script>
+</p>
+<p><!-- 導入 FileSaver 與 filereader --></p>
+<p>
+<script src="./../static/ace/FileSaver.min.js" type="text/javascript"></script>
+<script src="./../static/ace/filereader.js" type="text/javascript"></script>
+</p>
+<p><!-- 導入 ace --></p>
+<p>
+<script src="./../static/ace/ace.js" type="text/javascript"></script>
+<script src="./../static/ace/ext-language_tools.js" type="text/javascript"></script>
+<script src="./../static/ace/mode-python3.js" type="text/javascript"></script>
+<script src="./../static/ace/snippets/python.js" type="text/javascript"></script>
+</p>
+<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["py_src"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
+<p>
+<script type="text/javascript">
+function doSave(storage_id, filename){
+    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
+    filename = document.getElementById(filename).value
+    saveAs(blob, filename+".py");
+}
+</script>
+</p>
+<h4>開始練習 print() 用法, 並著手建立函式</h4>
+<p><!-- 印出版次與關鍵字程式 --></p>
+<p>
+<script type="text/python3">
+
+from browser import document as doc
+
+import ace
+
+
+
+# Brython 3.3.4 內建的 container 名稱為  'container' 且 turtle 輸出為 svg 必須使用 div 訂定 id
+
+Ace = ace.Editor(editor_id="kw_editor", console_id="kw_console", container_id="kw__container", storage_id="kw_py_src" )
+
+
+
+Ace.editor.setValue("""# 導入 sys 模組
+
+import sys
+
+# 導入 keyword 模組
+
+import keyword
+
+
+
+def helloWorld():
+
+    print("Hello World!")
+
+
+
+helloWorld()
+
+
+
+# 利用 sys 模組中的 version_info 印出 Python 版次
+
+print("Python version: ", sys.version_info)
+
+# 利用 keyword 模組中的 kwlist 印出關鍵字
+
+print("Python keywords: ", keyword.kwlist)
+
+""")
+
+Ace.editor.scrollToRow(0)
+
+Ace.editor.gotoLine(0)
+
+
+
+# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
+
+doc['kw_run'].bind('click', Ace.run)
+
+doc['kw_show_console'].bind('click', Ace.show_console)
+
+doc['kw_clear_console'].bind('click', Ace.clear_console)
+
+</script>
+</p>
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<div id="kw_editor" style="width: 600px; height: 300px;"></div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src', 'kw_filename');" type="submit" value="Save"/></form>
+<p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除</button></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
+<p><!-- ****************************** keyword start -->
+<script type="text/python3">
+
+from browser import document as doc
+
+# 導入位於 static 目錄下的 beditor.py 
+
+import beditor
+
+# 利用 beditor.py 中的 editor 類別建立案例, 對應到 kw1
+
+kw1 = beditor.editor("""# 導入 sys 模組
+
+import sys
+
+# 導入 keyword 模組
+
+import keyword
+
+
+
+# 利用 sys 模組中的 version_info 印出 Python 版次
+
+print("Python version: ", sys.version_info)
+
+# 利用 keyword 模組中的 kwlist 印出關鍵字
+
+print("Python keywords: ", keyword.kwlist)
+
+""", "kw_editor", "kw_console", "kw__container", "kw_py_src")
+
+# id 為 "keyword" 的按鈕點按時, 執行 kw1 物件中的 prog 方法
+
+doc["keyword"].bind('click', kw1.prog)
+
+</script>
+</p>
+<p><!-- ****************************** keyword end --></p>
+<p><!-- ***************************** slide ex1 start --></p>
+<p>
+<script type="text/python3">
+
+from browser import document as doc
+
+import beditor
+
+Ex1 = beditor.editor("""# 導入 Ex1 原始碼
+
+a = 0
+
+def my_print(n, input_str):
+
+    print("以下將重覆列印 '", input_str + "' " + str(n) + "次")
+
+    for i in range(n):
+
+        print(i, input_str)
+
+
+
+my_print(5, "Hello World!")
+
+the_str = "開始學習 Python"
+
+num = input("請輸入要列印的次數!")
+
+my_print(int(num), the_str)
+
+a = a + 1
+
+print("(" + str(a) + ")", "_" * 25)
+
+
+
+def myfun():
+
+    yield 1
+
+    yield 2
+
+    yield 3
+
+
+
+for i in myfun():
+
+    print(i)
+
+
+
+x = iter(myfun())
+
+y = list(myfun())
+
+
+
+a = a + 1
+
+print("(" + str(a) + ")", "_" * 25)
+
+print(x.__next__())
+
+print(x.__next__())
+
+print(x.__next__())
+
+print(y)
+
+""", "kw_editor", "kw_console", "kw__container", "kw_py_src")
+
+# id 為 "ex1" 的按鈕點按時, 執行 Ex1 物件中的 prog 方法
+
+doc["ex1"].bind('click', Ex1.prog)
+
+</script>
+</p>
+<p><!-- ***************************** slide ex1 end --></p>
+<p><button id="keyword">Keyword</button><button id="ex1">Ex1</button></p>
+<h4>認識 Syntax, Runtime 與 Logical Errors</h4>
+<h4>利用 input() 取得使用者輸入</h4>
+<!--
 <br />簡介 << <a href='簡介.html'>Previous</a> <a href='reveal 投影片.html'>Next</a> >> reveal 投影片</section></div></body></html>
